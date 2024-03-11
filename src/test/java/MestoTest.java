@@ -24,7 +24,7 @@ public class MestoTest {
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
                 .body("{\"name\":\"Москва\",\"link\":\"https://code.s3.yandex.net/qa-automation-engineer/java/files/paid-track/sprint1/photoSelenium.jpg\"}") // Формируем тело запроса
                 .post("/api/cards") // Делаем POST-запрос
-                .then().statusCode(200); // Проверяем код ответа
+                .then().statusCode(201); // Проверяем код ответа
     }
 
     @Test
